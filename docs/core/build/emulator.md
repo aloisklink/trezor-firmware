@@ -11,7 +11,7 @@ Install the required packages, depending on your operating system.
 * __Debian/Ubuntu__:
 
 ```sh
-sudo apt-get install scons libsdl2-dev libsdl2-image-dev llvm-dev libclang-dev clang
+sudo apt-get install scons libsdl2-dev libsdl2-image-dev llvm-dev libclang-dev clang protobuf-compiler
 ```
 
 * __Fedora__:
