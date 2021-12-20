@@ -211,7 +211,7 @@ release legacy unix debug deploy:
   script:
     - export VERSION=$(./tools/version.sh legacy/firmware/version.h)
     - DEST="$DEPLOY_PATH/trezor-emu-legacy-v$VERSION"
-    - DEST_ARM="$DEPLOY_PATH/trezor-emu-legacy-v$VERSION"
+    - DEST_ARM="$DEPLOY_PATH/trezor-emu-legacy-arm-v$VERSION"
     - echo "Deploying to $DEST and $DEST_ARM"
     - nix-shell -p patchelf --run "patchelf --set-interpreter /lib64/ld-linux-x86-64.so.2 legacy/firmware/trezor.elf"
     - nix-shell -p patchelf --run "patchelf --set-interpreter /lib/ld-linux-aarch64.so.1 legacy/firmware/trezor-arm.elf"
